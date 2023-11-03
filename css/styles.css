@@ -569,7 +569,6 @@ display: flex;
 }
 
 /* REVIEW FORM STYLES */
-
 .review-form-description {
     color: var(--NAVY-BLUE, #2E2F42);
         text-align: center;
@@ -578,7 +577,6 @@ display: flex;
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
-
 .review-form-field-label {
     display: block;
     color: var(--LIGHT-SLATE, #8E8F99);
@@ -588,7 +586,6 @@ display: flex;
         letter-spacing: 0.04em;
         margin-bottom: 4px;
 }
-
 .review-form-field {
     width: 100%;
     height: 40px;
@@ -596,16 +593,13 @@ display: flex;
     border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
     padding-left: 38px;
 }
-
 .review-form-field-wrapper {
     margin-bottom: 26px;
+    height: 58px;
 }
-
 .review-form-input-wrapper {
     position: relative;
 }
-
-
 .review-form-field-icon {
     position: absolute;
     fill: #2E2F42;
