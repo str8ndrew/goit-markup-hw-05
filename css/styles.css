@@ -525,8 +525,17 @@ display: flex;
     width: 100%;
     height: 100%;
     background-color: #2E2F4266;
-}
 
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 
 /* MODAL WINDOW STYLES */
 .modal {
@@ -538,13 +547,69 @@ display: flex;
     min-height: 584px;
     background-color: #FCFCFC;;
     border-radius: 4px;
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 104px;
 }
 .modal-close-btn {
     position: absolute;
-    top: 32px;
-    right: 32px;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
     border: none;
     background-color: transparent;
     padding: 0;
     line-height: 0;
+}
+.modal-close-btn .modal-close-btn-icon:active {
+
+
+}
+
+/* REVIEW FORM STYLES */
+
+.review-form-description {
+    color: var(--NAVY-BLUE, #2E2F42);
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+}
+
+.review-form-field-label {
+    display: block;
+    color: var(--LIGHT-SLATE, #8E8F99);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+        margin-bottom: 4px;
+}
+
+.review-form-field {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    padding-left: 38px;
+}
+
+.review-form-field-wrapper {
+    margin-bottom: 26px;
+}
+
+.review-form-input-wrapper {
+    position: relative;
+}
+
+
+.review-form-field-icon {
+    position: absolute;
+    fill: #2E2F42;
+top: 50%;
+left: 16px;
+transform: translateY(-50%);
 }
