@@ -514,11 +514,11 @@ display: flex;
 }
 .subscribe-div {
     display: flex;
-    flex-direction: row;
 }
 
 
 .subscribe-text {
+    display: flex;
     color: var(--WHITE, #FFF);
         font-size: 16px;
         font-weight: 500;
@@ -541,6 +541,7 @@ display: flex;
 
 .subscribe-btn {
     display: flex;
+    flex-direction: row;
     width: 165px;
     height: 40px;
     justify-content: center;
