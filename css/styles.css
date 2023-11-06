@@ -708,6 +708,10 @@ outline-offset: 4px;
 margin-bottom: 8px;
 }
 
+.review-form-textarea-wrapper {
+    margin-bottom: 16px;
+}
+
 .review-form-input-wrapper {
     position: relative;
 }
