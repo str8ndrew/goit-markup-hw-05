@@ -361,12 +361,13 @@
 <form class="subscribe-form">
     <label class="subscribe-label">
 <input class="subscribe-input" type="email" name="user-email" placeholder="E-mail" />
+</label>
 <button class="subscribe-btn" type="submit">Subscribe<svg class="subscribe-icon" width="24" height="24">
         <use href="./images/icons.svg#icon-telegram"></use>
     </svg>
 </button>
 
-</label>
+
 </form>
 </div>
         
@@ -376,9 +377,9 @@
 
 
     <!-- BACKDROP CODE -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
         <div class="modal">
-            <button class="modal-close-btn btn-style" type="button">
+            <button class="modal-close-btn" type="button">
                 <svg class="modal-close-btn-icon" width="8" 
                     height="8" 
                     aria-label="modal close button">
@@ -389,14 +390,14 @@
             <p class="review-form-description">Leave your contacts and we will call you back</p>
             <form class="review-form">
                 <div class="review-form-field-wrapper">
-                    <label class="review-form-field-label" for="user-firs-name">
+                    <label class="review-form-field-label" for="user-name">
                     Name
                     </label>
                     <div class="review-form-input-wrapper">
                         <input class="review-form-field" 
                         type="text"
-                        name="user_first_name" 
-                        id="user-firs-name"
+                        name="user-name" 
+                        id="user-name"
                         required
                         pattern="[a-zA-Zа-яА-ЯіІїЇєЄйЙґҐ']+"
                         title="Ivan" />
@@ -446,12 +447,12 @@
                 <div class="review-form-checkbox-wrapper">
                     <input class="review-form-checkbox visually-hidden" 
                     type="checkbox"
-                    name="user_policy"
+                    name="user-privacy"
                     value="true"
-                    id="user-policy"
+                    id="user-privacy"
                     required />
                     <label class="review-form-checkbox-label" 
-                    for="user-policy">
+                    for="user-privacy">
                     <span class="review-form-own-checkbox">
                         <svg class="review-form-own-checkbox-icon" width="10" height="8">
                             <use href="./images/icons.svg#icon-vector"></use>
